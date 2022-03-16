@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.title {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  margin-bottom: 60px;
+  gap: 20px;
+  padding: 0 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ---------------- form ---------------- */
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 10px;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.textinput input,
+.textinput textarea {
+	border-radius: 0;
+	border: 2px solid rgb(209, 209, 209);
+	height: 40px;
+	padding: 10px;
+	border-radius: 20px 0 0 20px;
+	font-size: 1.1em;
+  font-family: 'Consolas';
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+.textinput textarea  {
+  height: 140px;
+  resize: none;
+}
+.textinput input:focus,
+.textinput textarea:focus,
+.submitbtn:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px rgba(128, 190, 240, 0.35);
+	z-index: 2;
+}
+.submitbtn {
+  height: 35px;
+  width: 120px;
+  border: none;
+  background-color: rgb(15, 129, 68);
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) and (min-width: 580px) {
+  .container {
+    max-width: 700px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .form {
+    width: 62%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 900px;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .form {
+    width: 420px;
+  }
+}
