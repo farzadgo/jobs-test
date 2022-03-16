@@ -45,7 +45,7 @@ const Home = ({ jobs }) => {
 
       <div className={styles.title}>
         <h1>Available Positions</h1>
-        <p>From <a href="https://fago-fake-server-app.herokuapp.com/" target="_blank" ><b>this</b></a> database endpoint</p>
+        <p>From <a href="https://fago-fake-server-app.herokuapp.com/" target="_blank" rel="noreferrer"><b>this</b></a> database endpoint</p>
       </div>
 
       {
