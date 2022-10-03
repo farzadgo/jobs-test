@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
 const Home = ({ jobs }) => {
   const [data, setData] = useState('')
 	const [loading, setLoading] = useState(true)
-  console.log(data)
+  // console.log(data)
 
   // FOR MODAL
   const [desc, setDesc] = useState('')
@@ -33,7 +33,8 @@ const Home = ({ jobs }) => {
     console.log('home mounted')
     if (jobs) {
       setData(jobs)
-      setTimeout(() => {setLoading(false)}, 900)
+      // setTimeout(() => {setLoading(false)}, 900)
+      setLoading(false)
     }
     return () => {
       console.log('home unmounted')
